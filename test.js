@@ -49,7 +49,7 @@
   runCurl = function() {
     var curl;
     curlRunning = true;
-    curl = child_process.spawn('curl', ['-v', 'http://www.example.com/', '-L', '--socks5-hostname', '127.0.0.1:23119']);
+    curl = child_process.spawn('curl', ['-v', 'http://www.example.com/', '-L', '--socks5-hostname', '127.0.0.1:24566']);
     curl.on('exit', function(code) {
       local.kill();
       server.kill();
